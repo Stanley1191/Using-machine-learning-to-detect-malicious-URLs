@@ -45,7 +45,7 @@ def TL():
 	allurlsdata = pd.DataFrame(allurlscsv)	#converting to a dataframe
 
 	allurlsdata = np.array(allurlsdata)	#converting it into an array
-	random.shuffle(allurlsdata)	#shuffling
+	np.random.shuffle(allurlsdata)	#shuffling
 
 	y = [d[1] for d in allurlsdata]	#all labels 
 	corpus = [d[0] for d in allurlsdata]	#all urls corresponding to a label (either good or bad)
